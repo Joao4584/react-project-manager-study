@@ -1,0 +1,22 @@
+/* Estilos específicos para o main */
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: #fffaf0;
+  min-height: 328px;
+
+  section {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+}

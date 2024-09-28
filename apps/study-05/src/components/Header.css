@@ -1,0 +1,63 @@
+/* Estilos específicos para o header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 20px; */
+  /* padding: 20px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #015153;
+  color: white;
+
+  .logo-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 0.5em;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 60px;
+    background-color: #fbfbfd;
+    box-shadow: 0px 0px 3px 0px black;
+    z-index: 1;
+    border-radius: 5px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: black;
+    font-size: 10px;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #386364;
+    color: #fbfbfd;
+    font-weight: 600;
+  }
+
+  a {
+    font-weight: 300;
+    color: #fbfbfd;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #fbfbfd;
+  }
+}

@@ -1,0 +1,16 @@
+/* Estilos específicos para o footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: #015153;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+footer p {
+  font-size: 0.7rem;
+  margin: 5px 0;
+}

@@ -1,0 +1,23 @@
+section{
+    width: 100%;
+  }
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    gap: 5px; /* Espaçamento entre os vídeos */
+    padding: 0px;
+  }
+   
+  .video-item {
+    aspect-ratio: 16/9; /* Mantém a proporção dos vídeos */
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+   
+  iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }

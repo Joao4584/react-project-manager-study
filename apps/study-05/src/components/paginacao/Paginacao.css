@@ -1,0 +1,111 @@
+section {
+    width: 490px;
+  }
+   
+  li {
+    display: flex;
+    justify-content: space-between;
+  }
+   
+  .list-container {
+    padding: 10px;
+  }
+   
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+   
+  .list-receita {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+   
+  .list-receita h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+   
+  .list-receita p {
+    margin: 5px 0 0;
+    color: #666;
+  }
+   
+  .paginacao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+   
+  .page-button {
+    padding: 2px 4px;
+    margin: 0 1px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+   
+  .page-button.active {
+    background-color: #044142;
+    color: rgb(206, 247, 247);
+  }
+   
+  .bordered-list {
+    list-style-type: none; /* Remove marcadores padrão */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+  }
+   
+  .bordered-list li {
+    padding: 5px; /* Adiciona padding ao redor do texto */
+    margin-bottom: 0px; /* Espaço entre os itens */
+    border: 0.5px solid #000; /* Borda ao redor do item */
+    position: relative; /* Necessário para o posicionamento dos pseudo-elementos */
+  }
+   
+  .bordered-list li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 0.5px solid #000; /* Borda superior */
+    z-index: -1; /* Coloca a linha atrás do conteúdo do item */
+  }
+   
+  .bordered-list li:first-of-type::before {
+    display: none; /* Remove a borda superior do primeiro item */
+  }
+   
+  .bordered-list li:last-of-type {
+    border-bottom: 0.5px solid #000; /* Borda inferior do último item */
+  }
+   
+  .bordered-list li:not(:last-of-type) {
+    border-bottom: none; /* Remove a borda inferior entre os itens */
+  }
+   
+  .vertical-line-list {
+    list-style-type: none; /* Remove marcadores padrão */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+  }
+   
+  .vertical-line-list li {
+    padding: 10px; /* Adiciona padding ao redor do texto */
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+  }
+   
+  .vertical-line-list li:not(:last-child)::after {
+    content: ""; /* Necessário para gerar um pseudo-elemento */
+    position: absolute;
+    right: 60%; /* Posiciona a linha na borda direita do item */
+    top: 0;
+    height: 84px; /* Altura da linha igual à altura do item */
+    width: 0.5px; /* Largura da linha vertical */
+    background-color: #000; /* Cor da linha vertical */
+  }
